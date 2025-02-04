@@ -1,0 +1,51 @@
+2025-02-04T14:24:08.605+0000 I CONTROL  [initandlisten] MongoDB starting : pid=4858 port=27017 dbpath=/data/db 64-bit host=ca3d5c95d4b2
+2025-02-04T14:24:08.605+0000 I CONTROL  [initandlisten] db version v3.6.3
+2025-02-04T14:24:08.605+0000 I CONTROL  [initandlisten] git version: 9586e557d54ef70f9ca4b43c26892cd55257e1a5
+2025-02-04T14:24:08.605+0000 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.1.1  11 Sep 2018
+2025-02-04T14:24:08.605+0000 I CONTROL  [initandlisten] allocator: tcmalloc
+2025-02-04T14:24:08.605+0000 I CONTROL  [initandlisten] modules: none
+2025-02-04T14:24:08.605+0000 I CONTROL  [initandlisten] build environment:
+2025-02-04T14:24:08.605+0000 I CONTROL  [initandlisten]     distarch: x86_64
+2025-02-04T14:24:08.605+0000 I CONTROL  [initandlisten]     target_arch: x86_64
+2025-02-04T14:24:08.605+0000 I CONTROL  [initandlisten] options: { net: { bindIp: "0.0.0.0" }, storage: { dbPath: "/data/db" } }
+2025-02-04T14:24:08.606+0000 I -        [initandlisten] Detected data files in /data/db created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
+2025-02-04T14:24:08.606+0000 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=7347M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),statistics_log=(wait=0),verbose=(recovery_progress),
+2025-02-04T14:24:16.373+0000 I STORAGE  [initandlisten] WiredTiger message [1738679056:373541][4858:0x7fc7f399d0c0], txn-recover: Main recovery loop: starting at 2/6400
+2025-02-04T14:24:18.171+0000 I STORAGE  [initandlisten] WiredTiger message [1738679058:171267][4858:0x7fc7f399d0c0], txn-recover: Recovering log 2 through 3
+2025-02-04T14:24:18.866+0000 I STORAGE  [initandlisten] WiredTiger message [1738679058:866485][4858:0x7fc7f399d0c0], txn-recover: Recovering log 3 through 3
+2025-02-04T14:24:19.504+0000 I CONTROL  [initandlisten] 
+2025-02-04T14:24:19.505+0000 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2025-02-04T14:24:19.505+0000 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2025-02-04T14:24:19.505+0000 I CONTROL  [initandlisten] ** WARNING: You are running this process as the root user, which is not recommended.
+2025-02-04T14:24:19.505+0000 I CONTROL  [initandlisten] 
+2025-02-04T14:24:19.622+0000 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '/data/db/diagnostic.data'
+2025-02-04T14:24:19.624+0000 I NETWORK  [initandlisten] waiting for connections on port 27017
+2025-02-04T14:29:19.624+0000 I STORAGE  [thread1] createCollection: config.system.sessions with generated UUID: 990a7c91-e23f-4005-b85a-df1cfdc62c5a
+2025-02-04T14:29:19.636+0000 I INDEX    [thread1] build index on: config.system.sessions properties: { v: 2, key: { lastUse: 1 }, name: "lsidTTLIndex", ns: "config.system.sessions", expireAfterSeconds: 1800 }
+2025-02-04T14:29:19.636+0000 I INDEX    [thread1] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2025-02-04T14:29:19.638+0000 I INDEX    [thread1] build index done.  scanned 0 total records. 0 secs
+2025-02-04T20:03:25.274+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:38116 #1 (1 connection now open)
+2025-02-04T20:03:25.467+0000 I NETWORK  [conn1] received client metadata from 127.0.0.1:38116 conn: { driver: { name: "nodejs", version: "3.7.4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "5.3.0-1032-aws" }, platform: "'Node.js v12.22.11, LE (unified)" }
+2025-02-04T20:05:04.767+0000 I NETWORK  [conn1] end connection 127.0.0.1:38116 (0 connections now open)
+2025-02-04T20:08:02.570+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:38122 #2 (1 connection now open)
+2025-02-04T20:08:02.671+0000 I NETWORK  [conn2] received client metadata from 127.0.0.1:38122 conn: { driver: { name: "nodejs", version: "3.7.4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "5.3.0-1032-aws" }, platform: "'Node.js v12.22.11, LE (unified)" }
+2025-02-04T20:11:10.772+0000 I NETWORK  [conn2] end connection 127.0.0.1:38122 (0 connections now open)
+2025-02-04T20:19:14.766+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:38134 #3 (1 connection now open)
+2025-02-04T20:19:14.966+0000 I NETWORK  [conn3] received client metadata from 127.0.0.1:38134 conn: { driver: { name: "nodejs", version: "3.7.4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "5.3.0-1032-aws" }, platform: "'Node.js v12.22.11, LE (unified)" }
+2025-02-04T20:19:15.271+0000 I COMMAND  [conn3] command admin.$cmd command: isMaster { ismaster: true, client: { driver: { name: "nodejs", version: "3.7.4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "5.3.0-1032-aws" }, platform: "'Node.js v12.22.11, LE (unified)" }, compression: [], helloOk: true, $db: "admin" } numYields:0 reslen:223 locks:{} protocol:op_query 299ms
+2025-02-04T20:26:41.430+0000 I NETWORK  [conn3] end connection 127.0.0.1:38134 (0 connections now open)
+2025-02-04T20:27:18.076+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:38146 #4 (1 connection now open)
+2025-02-04T20:27:18.370+0000 I NETWORK  [conn4] received client metadata from 127.0.0.1:38146 conn: { driver: { name: "nodejs", version: "3.7.4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "5.3.0-1032-aws" }, platform: "'Node.js v12.22.11, LE (unified)" }
+2025-02-04T20:27:23.782+0000 I NETWORK  [conn4] end connection 127.0.0.1:38146 (0 connections now open)
+2025-02-04T20:28:20.676+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:38150 #5 (1 connection now open)
+2025-02-04T20:28:20.873+0000 I NETWORK  [conn5] received client metadata from 127.0.0.1:38150 conn: { driver: { name: "nodejs", version: "3.7.4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "5.3.0-1032-aws" }, platform: "'Node.js v12.22.11, LE (unified)" }
+2025-02-04T20:31:21.169+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:38162 #6 (2 connections now open)
+2025-02-04T20:31:21.267+0000 I NETWORK  [conn6] received client metadata from 127.0.0.1:38162 conn: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.6.3" }, os: { type: "Linux", name: "Ubuntu", architecture: "x86_64", version: "18.04" } }
+2025-02-04T20:31:21.586+0000 I NETWORK  [conn6] end connection 127.0.0.1:38162 (1 connection now open)
+2025-02-04T20:35:14.966+0000 I NETWORK  [conn5] end connection 127.0.0.1:38150 (0 connections now open)
+2025-02-04T20:36:50.066+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:38172 #7 (1 connection now open)
+2025-02-04T20:36:50.868+0000 I NETWORK  [conn7] received client metadata from 127.0.0.1:38172 conn: { driver: { name: "nodejs", version: "3.7.4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "5.3.0-1032-aws" }, platform: "'Node.js v12.22.11, LE (unified)" }
+2025-02-04T20:36:50.880+0000 I COMMAND  [conn7] command admin.$cmd command: isMaster { ismaster: true, client: { driver: { name: "nodejs", version: "3.7.4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "5.3.0-1032-aws" }, platform: "'Node.js v12.22.11, LE (unified)" }, compression: [], helloOk: true, $db: "admin" } numYields:0 reslen:223 locks:{} protocol:op_query 199ms
+2025-02-04T20:38:37.152+0000 I NETWORK  [conn7] end connection 127.0.0.1:38172 (0 connections now open)
+2025-02-04T20:39:37.571+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:38184 #8 (1 connection now open)
+2025-02-04T20:39:37.969+0000 I NETWORK  [conn8] received client metadata from 127.0.0.1:38184 conn: { driver: { name: "nodejs", version: "3.7.4" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "5.3.0-1032-aws" }, platform: "'Node.js v12.22.11, LE (unified)" }
